@@ -9,52 +9,11 @@
 // | Author: kaka梦很美 <1099013371@qq.com>
 // +----------------------------------------------------------------------
 
-use Raylin666\Util\Helper\PhpHelper;
-use Raylin666\Util\Coroutine;
 use Swoole\Runtime as SwooleRuntime;
+use Raylin666\Utils\Helper\PhpHelper;
 use Swoole\Coroutine as SwooleCoroutine;
-use Raylin666\Util\ApplicationContext;
-
-if (! function_exists('container'))
-{
-    /**
-     * 获取容器服务
-     * @return \Raylin666\Contract\ContainerInterface
-     * @throws Exception
-     */
-    function container()
-    {
-        if (ApplicationContext::hasContainer()) {
-            return ApplicationContext::getContainer();
-        }
-
-        throw new Exception('The service container is not registered. Please execute `\Raylin666\Util\ApplicationContext::setContainer` Registration completed.');
-    }
-}
-
-if (! function_exists('make'))
-{
-    /**
-     * Create a object instance, if the DI container exist in ApplicationContext,
-     * then the object will be create by DI container via `make()` method, if not,
-     * the object will create by `new` keyword.
-     *
-     * @param string $name
-     * @param array  $parameters
-     * @return mixed
-     */
-    function make(string $name, array $parameters = [])
-    {
-        if (ApplicationContext::hasContainer()) {
-            $container = ApplicationContext::getContainer();
-            if (method_exists($container, 'make')) {
-                return $container->make($name, $parameters);
-            }
-        }
-
-        return new $name(...array_values($parameters));
-    }
-}
+use Raylin666\Utils\ApplicationContext;
+use Raylin666\Utils\Coroutine\Coroutine;
 
 if (! function_exists('call'))
 {
