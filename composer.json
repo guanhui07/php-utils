@@ -1,0 +1,45 @@
+{
+    "name": "raylin666/utils",
+    "description": "Utils basic service package.",
+    "keywords": [
+        "sdk",
+        "core",
+        "raylin666",
+        "util",
+        "base",
+        "common",
+        "swoole",
+        "utils",
+        "package",
+        "coroutine"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/raylin666/utils",
+    "authors": [
+        {
+            "name": "raylin666",
+            "email": "1099013371@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "symfony/finder": "^5.0",
+        "raylin666/contract": "^1.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "files": [
+            "helpers.php"
+        ],
+        "psr-4": {
+            "Raylin666\\Utils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "extra": {},
+    "packages": {},
+    "packages-dev": {}
+}
