@@ -1,14 +1,14 @@
 # utils 基础服务工具包
 
 [![GitHub release](https://img.shields.io/github/release/raylin666/utils.svg)](https://github.com/raylin666/utils/releases)
-[![PHP version](https://img.shields.io/badge/php-%3E%207.2-orange.svg)](https://github.com/php/php-src)
+[![PHP version](https://img.shields.io/badge/php-%3E%207.0-orange.svg)](https://github.com/php/php-src)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](#LICENSE)
 
 承载 通用/复用 方法函数、类 , 方便轻松调用, 后续将不断添加通用类函数。
 
 ### 环境要求
 
-* PHP >=7.2
+* PHP >=7.0
 
 ### 安装说明
 

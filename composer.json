@@ -2,16 +2,15 @@
     "name": "raylin666/utils",
     "description": "Utils basic service package.",
     "keywords": [
-        "sdk",
+        "php",
         "core",
         "raylin666",
         "util",
-        "base",
         "common",
         "swoole",
         "utils",
-        "package",
-        "coroutine"
+        "coroutine",
+        "spl"
     ],
     "type": "library",
     "license": "MIT",
@@ -23,7 +22,7 @@
         }
     ],
     "require": {
-        "php": ">=7.2",
+        "php": ">=7.0",
         "symfony/finder": "^5.0",
         "raylin666/contract": "^1.0"
     },
