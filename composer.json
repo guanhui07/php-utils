@@ -23,7 +23,7 @@
     "require": {
         "php": ">=7.0",
         "symfony/finder": "^5.0",
-        "raylin666/contract": "^1.0"
+        "guanhui07/contract": "dev-master"
     },
     "require-dev": {},
     "autoload": {
