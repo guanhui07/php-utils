@@ -21,7 +21,7 @@
         }
     ],
     "require": {
-        "php": ">=7.0",
+        "php": ">=7.4",
         "symfony/finder": "^5.0",
         "guanhui07/contract": "^1.1"
     },
